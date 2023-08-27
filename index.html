@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+  </head>
+  <body> 
+    <div id="mydiv" style="background-image:url('EaO4ew.gif');">
+      <div id="greenbox">
+        <p>Enter the passcode</p>
+        <input type="" id="passcode" name="passcode">
+        <button onclick="checkPasscode()">confirm</button>
+        <p id="warning"></p>
+      </div>
+    </div>
+    <style> #mydiv {
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #greenbox {
+      width: 300px;
+      padding: 20px;
+      background-color: rgb(37, 170, 37);
+      text-align: center;
+    } 
+    
+    </style>
+    <script>
+      function checkPasscode() {
+  var passcode = document.getElementById("passcode").value;
+  var warning = document.getElementById("warning");
+
+  if (passcode == "F!rstst€p23") {
+    window.location.href = "https://www.facebook.com/MindersORG?mibextid=ZbWKwL";
+  } else {
+    warning.innerText = "Not correct, You have one try left";
+  }
+}
+    </script>
+
+  </body>
+</html>
